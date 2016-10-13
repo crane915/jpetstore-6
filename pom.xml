@@ -125,7 +125,12 @@
     </dependency>
 
   </dependencies>
-
+  <repositories>
+     <repository>
+          <id>central</id>    
+          <url>http://182.140.210.215:8081/repository/maven-public/</url>
+     </repository>       
+  </repositories>       
   <build>
     <finalName>jpetstore</finalName>
     <pluginManagement>
