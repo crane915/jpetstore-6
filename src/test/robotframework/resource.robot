@@ -19,8 +19,8 @@ ${WELCOME_URL}    http://${SERVER}/jpetstore/actions/Catalog.action
 
 *** Keywords ***
 打开 ${browser} 浏览器并跳转到地址 ${url}
-#   Open Browser    ${url}    ${browser}   None  ${REMOTE_URL}
-   Open Browser    ${url}    ${browser}
+   Open Browser    ${url}    ${browser}   None  ${REMOTE_URL}
+#   Open Browser    ${url}    ${browser}
 
 打开浏览器到系统主页
    打开 ${BROWSER} 浏览器并跳转到地址 ${LOGIN_URL}
