@@ -25,8 +25,8 @@ mvn clean tomcat:run
 - Press Ctrl-C to stop the server.
 
 ## Run with Gradle
-		`gradle jettyRun`
-		
+		gradle jettyRun
+
 ## Run RobotFramework Test Case
 
 pybot -d target -x target/xunit.xml -v SERVER:182.140.210.214:7171 src/test
