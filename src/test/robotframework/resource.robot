@@ -7,7 +7,7 @@ Documentation     A resource file with reusable keywords and variables.
 Library           Selenium2Library
 
 *** Variables ***
-${SERVER}         localhost:8080
+${SERVER}         182.140.210.214:8282
 ${BROWSER}        chrome
 ${REMOTE_URL}     http://USERNAME:ACCESS_KEY@182.140.210.214:4444/wd/hub
 ${DELAY}          0
@@ -19,8 +19,8 @@ ${WELCOME_URL}    http://${SERVER}/jpetstore/actions/Catalog.action
 
 *** Keywords ***
 打开 ${browser} 浏览器并跳转到地址 ${url}
-   Open Browser    ${url}    ${browser}   None  ${REMOTE_URL}
-#   Open Browser    ${url}    ${browser}
+#   Open Browser    ${url}    ${browser}   None  ${REMOTE_URL}
+   Open Browser    ${url}    ${browser}
 
 打开浏览器到系统主页
    打开 ${BROWSER} 浏览器并跳转到地址 ${LOGIN_URL}
